@@ -14,7 +14,8 @@
     "prepublishOnly": "npm run build",
     "format": "prettier --write \"src/**/*.ts\"",
     "docs": "typedoc --out docs src/index.ts",
-    "deploy-docs": "npm run docs && gh-pages -d docs"
+    "deploy-docs": "npm run docs && gh-pages -d docs",
+    "pipeline": "npm version patch && npm run build && npm publish --access public"
   },
   "repository": {
     "type": "git",
