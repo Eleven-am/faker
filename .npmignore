@@ -1,0 +1,6 @@
+/.idea
+/docs
+/.vscode
+/.DS_Store
+/.prettierrc
+/node_modules
