@@ -1,4 +1,4 @@
-# @eleven-am/faker
+# faker
 
 A modern, strongly-typed fake data generator for TypeScript with a declarative, fluent API.
 
