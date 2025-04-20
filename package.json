@@ -1,0 +1,55 @@
+{
+  "name": "@eleven-am/faker",
+  "version": "0.0.1",
+  "description": "A modern, strongly-typed fake data generator for TypeScript with a declarative, fluent API.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "docs": "typedoc --out docs src/index.ts",
+    "deploy-docs": "npm run docs && gh-pages -d docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eleven-am/faker.git"
+  },
+  "keywords": [
+    "faker",
+    "mock",
+    "test",
+    "data",
+    "generator",
+    "fake-data",
+    "typescript",
+    "schema"
+  ],
+  "author": "Roy OSSAI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eleven-am/faker/issues"
+  },
+  "homepage": "https://github.com/eleven-am/faker#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.14.1",
+    "@typescript-eslint/eslint-plugin": "^8.30.1",
+    "@typescript-eslint/parser": "^8.30.1",
+    "eslint": "^9.25.0",
+    "gh-pages": "^6.3.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.3.2",
+    "typedoc": "^0.28.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
